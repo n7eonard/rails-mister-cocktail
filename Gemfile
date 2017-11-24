@@ -7,6 +7,7 @@ gem 'pg'
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
 gem 'redis'
+gem 'webpacker', '~> 3.0'
 
 gem 'sass-rails'
 gem 'jquery-rails'
@@ -16,7 +17,7 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'cloudinary'
-
+gem 'carrierwave', '~> 1.2'
 
 
 group :development, :test do
