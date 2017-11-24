@@ -453,3 +453,5 @@ Completed 200 OK in 70ms (Views: 36.7ms | ActiveRecord: 0.5ms)
 
 
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/n7eonard/code/n7eonard/rails-mister-cocktail/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/n7eonard/code/n7eonard/rails-mister-cocktail/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/n7eonard/code/n7eonard/rails-mister-cocktail/config/initializers/new_framework_defaults.rb:21)
