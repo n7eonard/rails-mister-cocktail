@@ -3788,3 +3788,276 @@ Processing by CocktailsController#index as HTML
 Completed 200 OK in 5556ms (Views: 5543.5ms | ActiveRecord: 0.8ms)
 
 
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/n7eonard/code/n7eonard/rails-mister-cocktail/config/initializers/new_framework_defaults.rb:21)
+Started GET "/cocktails/47" for 127.0.0.1 at 2017-11-25 00:54:04 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 00:54:07 +0100
+Processing by CocktailsController#show as HTML
+Processing by CocktailsController#index as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mCocktail Load (0.6ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.6ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/index.html.erb within layouts/application (198.2ms)
+  [1m[36mDose Exists (2.4ms)[0m  [1m[34mSELECT  1 AS one FROM "doses" WHERE "doses"."cocktail_id" = $1 LIMIT $2[0m  [["cocktail_id", 47], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 3213ms (Views: 2939.6ms | ActiveRecord: 67.6ms)
+
+
+  [1m[36mIngredient Load (15.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered cocktails/show.html.erb within layouts/application (2959.5ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 3368ms (Views: 2969.4ms | ActiveRecord: 43.6ms)
+
+
+Started GET "/cocktails/59" for 127.0.0.1 at 2017-11-25 00:54:15 +0100
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = $1 LIMIT $2[0m  [["id", 59], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  [1m[36mDose Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "doses" WHERE "doses"."cocktail_id" = $1 LIMIT $2[0m  [["cocktail_id", 59], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered cocktails/show.html.erb within layouts/application (14.3ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 44.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:03:36 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (10.9ms)
+  Rendered shared/_navbar.html.erb (10.2ms)
+  Rendered shared/_footer.html.erb (3.7ms)
+Completed 200 OK in 5500ms (Views: 5492.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:08:42 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (1.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (15.8ms)
+  Rendered shared/_navbar.html.erb (9.9ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 112ms (Views: 108.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:09:33 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (13.0ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 72.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:10:31 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (10.9ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 42.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cocktails/44" for 127.0.0.1 at 2017-11-25 01:10:35 +0100
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mCocktail Load (0.5ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  [1m[36mDose Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "doses" WHERE "doses"."cocktail_id" = $1 LIMIT $2[0m  [["cocktail_id", 44], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered cocktails/show.html.erb within layouts/application (11.5ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 83ms (Views: 39.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:11:46 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (17.4ms)
+  Rendered shared/_navbar.html.erb (10.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 109ms (Views: 105.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:12:49 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.5ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (9.6ms)
+  Rendered shared/_navbar.html.erb (10.2ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 5293ms (Views: 5283.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:13:13 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.7ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (20.4ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 79ms (Views: 76.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:14:50 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (615.8ms)
+Completed 500 Internal Server Error in 624ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `cocktail' for #<#<Class:0x00007fd4e6f6f9d8>:0x00007fd4f13181e8>
+Did you mean?  cocktail_url
+               @cocktails):
+    20:           <% end %>
+    21: 
+    22:           <div class="card-body">
+    23:             <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    24:           </div>
+    25:         </div>
+    26:       </div>
+  
+app/views/cocktails/index.html.erb:23:in `_app_views_cocktails_index_html_erb___3773689854140827244_70276278175320'
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:15:04 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.6ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    20:           <% end %>
+    21: 
+    22:           <div class="card-body">
+    23:             <%= link_to @cocktail.name, cocktail_path(cocktail) %>
+    24:           </div>
+    25:         </div>
+    26:       </div>
+  
+app/views/cocktails/index.html.erb:23:in `_app_views_cocktails_index_html_erb___3773689854140827244_70276285718920'
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:15:47 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (10.7ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:16:01 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  Rendered cocktails/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/n7eonard/code/n7eonard/rails-mister-cocktail/app/views/cocktails/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/cocktails/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:16:10 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  Rendered cocktails/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/n7eonard/code/n7eonard/rails-mister-cocktail/app/views/cocktails/index.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/cocktails/index.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:16:19 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (9.6ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 44ms (Views: 41.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:16:58 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (14.6ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:17:20 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (15.5ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 79ms (Views: 75.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:17:32 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (16.0ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:17:48 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (17.2ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:19:26 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (15.2ms)
+  Rendered shared/_navbar.html.erb (21.6ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 181ms (Views: 162.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:19:38 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (13.0ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 5488ms (Views: 5483.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cocktails" for 127.0.0.1 at 2017-11-25 01:20:57 +0100
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (17.6ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 3640ms (Views: 3637.8ms | ActiveRecord: 0.4ms)
+
+

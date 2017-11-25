@@ -8,17 +8,18 @@
 </div>
 
 <div class="container">
+  <h2 class="text-center title"> Nos créations</h2>
   <div class="row">
     <% @cocktails.each do |cocktail| %>
       <div class="col-xs-12 col-sm-4">
-        <div class="card text-center">
+        <div class="card-container">
 
           <% if cocktail.photo %>
-            <div class="card-header" style="background-image: url('<%= cl_image_path cocktail.photo %>')">
+            <div class="card" style="background-image: url('<%= cl_image_path cocktail.photo %>')">
             </div>
 
           <% else %>
-            <div class="card-header" style="background-image: url('http://www.seriouseats.com/images/2014/11/20141104-cocktail-party-old-fashioneds-holiday-vicky-wasik-3.jpg')">
+            <div class="card " style="background-image: url('http://www.seriouseats.com/images/2014/11/20141104-cocktail-party-old-fashioneds-holiday-vicky-wasik-3.jpg')">
             </div>
           <% end %>
           <div class="card-body">
